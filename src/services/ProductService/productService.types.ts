@@ -1,7 +1,7 @@
 import { Product } from "../../views/NewProduct/new_product.types"
 
 export type ProductData = {
-    [k: string]: FormDataEntryValue
+    [k: string]: string
 }
 export interface IAddProductArgs{
     data: ProductData
