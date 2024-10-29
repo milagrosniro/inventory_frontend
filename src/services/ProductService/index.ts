@@ -68,7 +68,7 @@ export const updateProduct = async ({ data, id }: IUpdateProductArgs) => {
       name: data.name,
       price: data.price,
       id: id,
-      availability: toBoolean(data.availability),
+      availability: typeof data.availability === 'string' && toBoolean(data.availability),
     });
 
     if (!result.success) throw new Error("Invalid Data");
