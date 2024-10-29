@@ -21,5 +21,5 @@ export interface IDeleteProductByIdArgs{
 }
 
 export interface IUpdateProductAvailabilityArgs{
-    id: Product['id']
+    id: any
 }
