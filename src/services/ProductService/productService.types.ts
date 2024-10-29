@@ -1,7 +1,7 @@
 import { Product } from "../../views/NewProduct/new_product.types"
 
 export type ProductData = {
-    [k: string]: string
+    [k: string]: FormDataEntryValue
 }
 export interface IAddProductArgs{
     data: ProductData
@@ -21,5 +21,5 @@ export interface IDeleteProductByIdArgs{
 }
 
 export interface IUpdateProductAvailabilityArgs{
-    id: any
+    id: number | string
 }
